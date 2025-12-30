@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>全运液压官网</title>
+    <style>
+        /* 基础样式 - 移动设备优先 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-image: url(images/beijing2.jpg);
+        }
+        
+        /* 容器 */
+        .container {
+            width: 100%;
+            padding: 15px;
+        }
+        
+        /* 头部 */
+        header {
+            background:#a7b1c2;
+            color:#0c3c7d;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        /* 导航 */
+       nav{
+		   background:#8596b5;
+	   padding:10px;
+	   }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column; /* 手机垂直排列 */
+        }
+        /* 1. 基础Flex容器：保证图片在左，文字在右 */
+        .media-card {
+            display: flex; /* 启用Flex布局 */
+            flex-direction: row; /* 子元素横向排列（默认）*/
+            align-items: flex-start; /* 内容顶部对齐（更自然） */
+            gap: 30px; /* 图片和文字之间的间距 */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #f9f9f9; /* 可选背景，方便预览 */
+            border-radius: 8px;
+        }
+
+        /* 2. 图片区域 (左侧) */
+        .media-card__image {
+            flex: 0 0 300px; /* 【关键】不伸缩，固定基础宽度300px */
+        }
+        .media-card__image img {
+            width: 100%; /* 图片宽度充满容器 */
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        /* 3. 文字区域 (右侧) */
+        .media-card__content {
+            flex: 1; 
+			background-image:url(images/beijing1.jpg)/* 【关键】占据剩余所有水平空间 */
+        }
+
+        /* 4. 响应式规则：屏幕变窄时纵向堆叠 */
+        @media (max-width: 768px) {
+            .media-card {
+                flex-direction: column; /* 改为纵向排列 */
+                gap: 20px;
+            }
+            .media-card__image {
+                flex: 0 0 auto; /* 取消固定宽度 */
+                width: 100%; /* 图片容器占满宽度 */
+                max-width: 400px; /* 可设置最大宽度防止过大 */
+                margin: 0 auto; /* 水平居中 */
+            }
+        }
+		
+.media-card__image {
+    width: 300px; /* 图片初始宽度 */
+    overflow: hidden; /* 隐藏放大时溢出的部分 */
+    border-radius: 5px; /* 可选：添加圆角 */
+}
+.media-card__image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* 核心：定义变换效果，0.5秒完成 */
+}
+.media-card__image:hover {
+    transform: scale(1.2); /* 鼠标悬停时放大到1.2倍 */
+}
+		 /* 页脚 */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">全运液压官网</h1>
+    </header>
+    
+    <nav>
+      <div align="center"><a href="index.html">返回首页</a>&emsp;/&emsp;<a href="Untitled-2.html">联系我们</a></div>
+    </nav>
+        <div class="media-card__content">
+            <p><strong>匠心制造，液压先锋</strong><strong> </strong><br />
+               河北全运液压机械有限公司，作为液压装备制造领域的中坚力量，始终致力于为全球工业客户提供高品质的流体连接解决方案。依托深厚的行业积淀与卓越的制造工艺，全运液压已成为国内领先的液压机械研发与生产基地。 <br />
+              <strong>硬核实力，精工品质</strong> <br />
+               河北全运液压专注于核心产品的深度研发与制造，构建了以压管机、扣压机、切管机、剥胶机为核心的全系列产品矩阵。 <br />
+               压管机与扣压机：采用精密数控技术，确保管件连接的高强度与密封性，经久耐用； <br />
+              切管机与剥胶机：以高效、精准的加工能力，实现对各类管材的完美处理，极大提升作业效率。 <br />
+               每一台设备均经过严苛的质量检测，不仅代表着行业顶尖的加工精度，更承载着全运液压对&ldquo;中国制造&rdquo;的极致追求。 <br />
+              <strong>广泛应用，赋能工程</strong> <br />
+               河北全运液压的产品凭借卓越的性能与稳定性，已广泛渗透于工程机械、矿山开采、石油化工、农林机械及重型车辆制造等关键领域。 <br />
+              我们的设备不仅是连接流体的工具，更是驱动大型工程高效运转的核心动力。从基建狂魔的宏伟工程到精密制造的细微之处，全运液压始终是客户最值得信赖的合作伙伴。 <br />
+              <strong>展望未来，共创辉煌</strong> <br />
+              立足当下，展望未来。河北全运液压机械有限公司将继续秉持&ldquo;品质为本，创新为魂&rdquo;的经营理念，以更开放的姿态拥抱全球市场。我们期待与海内外各界精英携手共进，以硬核科技赋能液压行业，共创工业新高度。<br clear="all" />
+            </p>
+            <p align="justify" ><strong> </strong><strong>Pioneering Excellence in Hydraulic Solutions</strong><strong> </strong><br />
+              Hebei Quanyun Hydraulic Machinery Co., Ltd. stands as a cornerstone in the hydraulic equipment manufacturing sector, dedicated to delivering high-quality fluid connection solutions to industrial clients worldwide. With profound industry experience and exceptional manufacturing craftsmanship, we have established ourselves as a leading R&amp;D and production hub for hydraulic machinery in China.<br />
+              <strong>Our Core Strengths</strong><strong> </strong><br />
+              We specialize in the deep R&amp;D and manufacturing of a comprehensive product range, with Crimping Machines, Hose Crimpers, Pipe Cutting Machines, and Hose Skiving Machines as our flagship offerings.<br />
+              Crimping &amp; Cutting Technology: Engineered with precision CNC systems to ensure uncompromising strength, sealing performance, and durability.<br />
+              Efficient Processing: Our machines deliver high-efficiency and accurate processing capabilities, ensuring perfect handling of various pipe materials.<br />
+              <strong> </strong><strong>Global Applications</strong><strong> </strong><br />
+             Our products are widely recognized and applied across key sectors, including Engineering Machinery, mining, petrochemicals, and heavy-duty vehicle manufacturing. We empower large-scale engineering projects with reliable performance, serving as the trusted partner for your critical operations.<br />
+              <strong>Partner with Us</strong><strong> </strong><br />
+            </p>
+            Committed to &quot;Quality as the foundation, Innovation as the soul,&quot; Quanyun Hydraulic looks forward to forging partnerships with elites around the globe. Let&rsquo;s drive the future of the hydraulic industry together.<br clear="all" />
+            </strong>
+            </p>
+            <p>&nbsp;</p>
+</div>
+</div>
+     <!-- 图片在右、文字在左的模块 -->
+     <main class="main-content">
+     <p><strong>主要经营：</strong>液压动力机械及元件制造，金属加工机械制造，金属制品销售；建筑工程用机械销售；紧固件制造，机械零件、零部件加工，矿山机械销售；橡胶制品销售，橡胶加工专用设备销售。</p>
+     </div>
+     <footer>
+       <p>版权所有&copy;2025 全运液压，保留所有权利。</p>
+</footer>
+</body>
+</html>
