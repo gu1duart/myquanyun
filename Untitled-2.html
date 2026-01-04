@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>全运液压官网</title>
+    <style>
+        /* 基础样式 - 移动设备优先 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-image: url(images/beijing2.jpg);
+	background-repeat: repeat;
+        }
+        
+        /* 容器 */
+        .container {
+            width: 100%;
+            padding: 15px;
+        }
+        
+        /* 头部 */
+        header {
+            background:#a7b1c2;
+            color:#0c3c7d;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        /* 导航 */
+       nav{
+		   background:#8596b5;
+	   padding:10px;
+	   }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column; /* 手机垂直排列 */
+        }
+        /* 1. 基础Flex容器：保证图片在左，文字在右 */
+        .media-card {
+            display: flex; /* 启用Flex布局 */
+            flex-direction: row; /* 子元素横向排列（默认）*/
+            align-items: flex-start; /* 内容顶部对齐（更自然） */
+            gap: 30px; /* 图片和文字之间的间距 */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #f9f9f9; /* 可选背景，方便预览 */
+            border-radius: 8px;
+			background-image:url(images/beijing1.jpg)
+        }
+
+        /* 2. 图片区域 (左侧) */
+        .media-card__image {
+            flex: 0 0 300px; 
+			/* 【关键】不伸缩，固定基础宽度300px */
+        }
+        .media-card__image img {
+            width: 100%; /* 图片宽度充满容器 */
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        /* 3. 文字区域 (右侧) */
+        .media-card__content {
+            flex: 1; 
+			/* 【关键】占据剩余所有水平空间 */
+        }
+
+        /* 4. 响应式规则：屏幕变窄时纵向堆叠 */
+        @media (max-width: 900px) {
+            .media-card {
+                flex-direction: column; /* 改为纵向排列 */
+                gap: 20px;
+            }
+            .media-card__image {
+                flex: 0 0 auto; /* 取消固定宽度 */
+                width: 100%; /* 图片容器占满宽度 */
+                max-width: 400px; /* 可设置最大宽度防止过大 */
+                margin: 0 auto; /* 水平居中 */
+            }
+        }
+		.media-card__image {
+    width: 300px; /* 图片初始宽度 */
+    overflow: hidden; /* 隐藏放大时溢出的部分 */
+    border-radius: 5px; /* 可选：添加圆角 */
+}
+.media-card__image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* 核心：定义变换效果，0.5秒完成 */
+}
+.media-card__image:hover {
+    transform: scale(1.2); /* 鼠标悬停时放大到1.2倍 */
+}
+		 /* 页脚 */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    .media-card__content1 {            flex: 1; /* 【关键】占据剩余所有水平空间 */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">全运液压官网</h1>
+    </header>
+    
+    <nav>
+      <div align="center"><a href="index.html">返回首页</a>&emsp;/&emsp;<a href="Untitled-1.html">关于我们</a></div>
+    </nav>
+    
+    <!-- 图片在左、文字在右的模块 -->
+    <div class="media-card">
+        <!-- 左侧：图片区域 -->
+        <div class="media-card__image">
+          <img src="images/t5.jpg" alt="扫码加微信">
+        </div>
+        <!-- 右侧：文字区域 -->
+        <div class="media-card__content">
+            <h2>随时为您提供帮助
+
+ 
+</h2>
+            <p>尊敬的客户，您好！
+无论您是有产品咨询、合作意向，还是需要售后服务，我们都随时准备为您提供帮助。请选择您最方便的方式联系我们，我们不仅解决问题，更致力于为您提供超越预期的服务体验。98%的客户咨询在15分钟内获得首次响应。我们在这里，等您来聊！您的任何想法对我们都至关重要。</p>
+            <p><span class="media-card__content1">（工作时间 9:00-18:00）</span></p>
+          <p><b>官网：</b>www.quanyunyeya.cn</p>
+            <p><b>联系电话：</b>15028815333&emsp;/&emsp;15028815222 </p>
+          <p><b>微信：</b>请您扫码添加</p>
+          <p><b>地址:</b>河北全运液压机械有限公司（点击图片可查看详细地址）
+          <a href="https://map.baidu.com/poi/%E6%B2%B3%E5%8C%97%E5%85%A8%E8%BF%90%E6%B6%B2%E5%8E%8B%E6%9C%BA%E6%A2%B0%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@12948498.475,4510125.13,19z?uid=8ea086a471a365d69e95de51&amp;info_merge=1&amp;isBizPoi=false&amp;ugc_type=3&amp;ugc_ver=1&amp;device_ratio=1&amp;compat=1&amp;en_uid=8ea086a471a365d69e95de51&amp;pcevaname=pc4.1&amp;querytype=detailConInfo&amp;da_src=shareurl" title="地址">
+          <div class="media-card__image">
+          <img src="images/beijing3.jpg" /></div></a></p>
+      </div>
+    </div>
+    
+     <main class="main-content">
+     <strong>主要经营：</strong>液压动力机械及元件制造，金属加工机械制造，金属制品销售；建筑工程用机械销售；紧固件制造，机械零件、零部件加工，矿山机械销售；橡胶制品销售，橡胶加工专用设备销售。
+     <footer>
+  <p>版权所有&copy;2025 全运液压，保留所有权利。</p>
+</footer>
+</body>
+</html>
